@@ -1,0 +1,126 @@
+.subNav {
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    margin-left: 1.5vmax;
+    overflow: auto;
+    /* margin-top: 5vmax; */
+}
+
+#languageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1vmax;
+}
+
+#languageContainer>p {
+    font-size: 20px;
+    font-weight: 600;
+    color: #001d23;
+    cursor: pointer;
+    width: 200px;
+
+}
+
+#languageContainer>p>svg {
+    font-size: 3vmax;
+}
+
+
+
+.subNavItem {
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+}
+
+.subNavItem>a {
+    font-size: 15px;
+    margin: .5vmax;
+    transition: all .5s;
+    display: inline-block;
+    /* width: 20vmax; */
+}
+
+.subNavItem>a:hover {
+    color: #aaa;
+}
+
+#showAllListMenu{
+    display: none;
+    animation: showMenuAnima .2s linear forwards;
+
+}
+.allListMenu {
+    background-color: white;
+    border: 1px solid gray;
+    width: 90%;
+    margin: auto;
+    height: 100vh;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 1vmax;
+
+}
+.underMenuItem{
+    display: flex;
+    flex-direction: column;
+}
+.underMenuItem>p{
+    font-size: 1.6vmax;
+
+    font-weight: 700;
+    margin: 1vmax 0;
+}
+.underMenuItem>a{
+    font-size: 1vmax;   
+    color: gray;
+
+}
+.underMenuItem>a:hover{
+    color: #001d23;
+
+}
+.sellBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#subIconItem{
+    display: none;
+}
+
+@keyframes showMenuAnima{
+    0%{
+        transform: translateY(-1%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+#showAllListMenu .active{
+    display: block;
+    animation: showMenuAnima .5s ease-in-out forwards;
+}
+/* #showAllListMenu:not(.active){
+    display: none;
+    animation: hideMenuAnima .5s ease-in-out forwards;
+} */
+
+
+
+@media screen and (max-width:850px) {
+    .subNavItem {
+        display: none;
+    }
+
+    #languageContainer {
+        display: none;
+
+    }
+    #subIconItem{
+        display: flex;
+    }
+}
