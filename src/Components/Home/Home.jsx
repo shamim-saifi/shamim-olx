@@ -80,16 +80,14 @@ const Home = () => {
             price='₹ 6,79,000'
             name='Skoda Rapid 1.6 MPI Active, 2015, Petrol'
             location='HRBR LAYOUT, BENGALURU'
-            km='2015 - 53,142 km'
             day='JUL 24'
           />
 
           <HomeCard
             img={firstcard2}
             price='₹ 8,999'
-            name=''
+            name='IPhone 11 refurbished phone'
             location='VRINDAVAN, MATHURA'
-            km=''
             day='JUL 24'
           />
 
@@ -98,7 +96,6 @@ const Home = () => {
             price='₹ 29,999'
             name='Urgent sell new phone purchase'
             location='SAMUDRAPUR, MAHARASHTRA'
-            km=''
             day='TODAY'
           />
 
@@ -107,7 +104,6 @@ const Home = () => {
             price='₹ 18,000'
             name='IPhone 11 refurbished phone'
             location='SAMUDRAPUR, MAHARASHTRA'
-            km=''
             day='TODAY'
           />
 
@@ -125,7 +121,7 @@ const Home = () => {
       }
 
 
-      {/* second contaianer for card and it will show all card */}
+      {/* second contaianer for card and it will show all card */} 
       <div className='secondWrapper'>
 
         <h1>Fresh recommendations</h1>
@@ -137,7 +133,6 @@ const Home = () => {
             price='₹ 18,000'
             name='IPhone 11 refurbished phone'
             location='SAMUDRAPUR, MAHARASHTRA'
-            km=''
             day='TODAY'
           />
           <HomeCard
@@ -145,7 +140,6 @@ const Home = () => {
             price='₹ 2,75,000 '
             name='Maruti Suzuki Alto 800 2012-2016 CNG LXI, 2016, CNG & Hybrids'
             location='KALKAJI, DELHI'
-            km='2016 - 66,000 km'
             day='TODAY'
           />
           <HomeCard
@@ -153,7 +147,6 @@ const Home = () => {
             price='₹ 4,39,999'
             name='Hyundai Grand i10 Sportz 1.2 VTVT, 2016, Petrol'
             location='PREET VIHAR, DELHI'
-            km='2016 - 34,000 km'
             day='TODAY'
           />
           <HomeCard
@@ -161,7 +154,6 @@ const Home = () => {
             price='₹ 5,000'
             name='Series 8 ultra new model'
             location='SAMUDRAPUR, MAHARASHTRA'
-            km=''
             day='JUL 27'
           />
           <HomeCard
@@ -169,7 +161,6 @@ const Home = () => {
             price='₹ 12,500'
             name='iPhone. 13 128 GB'
             location='SAMUDRAPUR, MAHARASHTRA'
-            km=''
             day='TODAY'
           />
           <HomeCard
@@ -177,7 +168,6 @@ const Home = () => {
             price='₹ 1,001'
             name='COD AVAILABLE ONLy'
             location='SAMUDRAPUR, MAHARASHTRA'
-            km=''
             day='JUL 25'
           />
           <HomeCard
@@ -185,7 +175,6 @@ const Home = () => {
             price='₹ 19,999'
             name='iPhone. 13. Pro Max'
             location='SAMUDRAPUR, MAHARASHTRA'
-            km=''
             day='TODAY'
           />
           <HomeCard
@@ -193,7 +182,6 @@ const Home = () => {
             price='₹ 40,000'
             name='Boundary Wall Pre-Cast & Poles Manufacturing Unit for Rent'
             location='SAMUDRAPUR, MAHARASHTRA'
-            km=''
             day='JUL 10'
           />
           <HomeCard
@@ -201,7 +189,6 @@ const Home = () => {
             price='₹ 4,999'
             name='Low Price Best Home Cinema Wifi Smart HD LED Projector USB HDMI SD AUX'
             location='SAMUDRAPUR, MAHARASHTRA'
-            km=''
             day='YESTERDAY'
           />
           <HomeCard
@@ -209,7 +196,6 @@ const Home = () => {
             price='₹ 1,600'
             name='Antique brass sundail compass writch watch with leather strip'
             location='SAMUDRAPUR, MAHARASHTRA'
-            km=''
             day='TODAY'
           />
           <HomeCard
@@ -217,7 +203,6 @@ const Home = () => {
             price='₹ 5,999'
             name='3000 LUMENS YOUTUBE WIFI SMART FULL HD VIDEO PROJECTOR HDMI USB AV AUX'
             location='SAMUDRAPUR, MAHARASHTRA'
-            km=''
             day='YESTERDAY'
           />
           <HomeCard
@@ -225,7 +210,6 @@ const Home = () => {
             price='₹ 2,500'
             name='Series 8 combo available'
             location='SAMUDRAPUR, MAHARASHTRA'
-            km=''
             day='YESTERDAY'
           />
           <HomeCard
@@ -233,7 +217,6 @@ const Home = () => {
             price='₹ 3,500'
             name='RD5 projector 3D 4K wifi smart youtube live tv usb hdmi 145 inch size'
             location='SAMUDRAPUR, MAHARASHTRA'
-            km=''
             day='2 DAYS AGO'
           />
           <HomeCard
@@ -241,7 +224,6 @@ const Home = () => {
             price='₹ 2,500'
             name='Series & ultra new model available'
             location='SAMUDRAPUR, MAHARASHTRA'
-            km=''
             day='YESTERDAY'
           />
           <HomeCard
@@ -249,7 +231,6 @@ const Home = () => {
             price='₹ 1,999'
             name='We have new collection smart watches online order booking'
             location='SAMUDRAPUR, MAHARASHTRA'
-            km=''
             day='3 DAYS AGO'
           />
           <HomeCard
@@ -257,7 +238,6 @@ const Home = () => {
             price='₹ 4,000'
             name='Antique Solid Brass Majara Telephone Collectible Working Telephon'
             location='SAMUDRAPUR, MAHARASHTRA'
-            km=''
             day='3 DAYS AGO'
           />
           <HomeCard
@@ -265,7 +245,6 @@ const Home = () => {
             price='₹ 2,199'
             name='Google Speaker With Wireless charging'
             location='SAMUDRAPUR, MAHARASHTRA'
-            km=''
             day='3 DAYS AGO'
           />
 

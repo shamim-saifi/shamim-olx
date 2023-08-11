@@ -4,15 +4,12 @@ import {
     HStack,
     Img,
     Input,
-    InputGroup,
-    InputLeftElement,
-    InputRightElement,
     Menu,
     MenuButton,
     MenuItem,
     MenuList,
     Drawer, DrawerBody, DrawerContent, DrawerHeader,
-    DrawerOverlay, IconButton, DrawerCloseButton, VStack, Heading, Text, useDisclosure, Avatar
+    DrawerOverlay, IconButton, DrawerCloseButton, VStack, Heading, Text, useDisclosure, Avatar,
 
 } from '@chakra-ui/react'
 
@@ -45,6 +42,7 @@ const Nav = () => {
     return (
         <>
             <HStack position={'sticky'} left={'0'} top={'0'} zIndex={'10'} h={'10vh'} w={'100%'} bgColor={'gray.100'} p={'2'} justifyContent={['space-between', 'none']} alignItems={'center'}>
+                {/* it is manu btn which will show in phone size */}
                 <Box ml={['5vmax', '0']} display={'flex'} justifyContent={'center'} alignItems={'center'} boxSize={['10%', '5%']}>
                     <Img src={logo} />
                     <Box display={['block', 'none']} ml={'1vmax'}>
@@ -85,34 +83,30 @@ const Nav = () => {
 
 
 
-                <Box border={'2px solid #001d23'} display={['none', 'block']}  >
-
-                    <InputGroup size={'md'} bgColor={'white'} w={'250px'}  >
-                        <InputLeftElement  >
-                            <BiSearch color='gray.300' />
-                        </InputLeftElement>
-                        <Input type='search' placeholder='your Location' />
-                        <InputRightElement  >
-                            <ChevronDownIcon boxSize={'3vmax'} />
-                        </InputRightElement>
-                    </InputGroup>
+                <Box border={'2px solid #001d23'} w={'20%'} borderRadius={'7px'} display={['none', 'flex']} flexShrink={'1'}  >
+                    <Box  borderRadius={'7px'} w={'30px'}  bgColor={'white'} display={'flex'} alignItems={'center'} justifyContent={'center'} >
+                        <BiSearch fontSize={['2vmax','3.3vmax']} color='#001d23' cursor={'pointer'} />
+                    </Box>
+                    <Input variant={'unstyled'} padding={'8px'} bgColor={'white'} type='search' placeholder='your Location' />
+                    <Box borderRadius={'7px'} w={'30px'} bgColor={'white'} display={'flex'} alignItems={'center'} justifyContent={'center'} >
+                        <ChevronDownIcon fontSize={['2vmax','3vmax']} color='#001d23' cursor={'pointer'} />
+                    </Box>
                 </Box>
 
-                <Box border={['unset', '2px solid #001d23']} w={'40%'} display={['none', 'block']}>
-                    <InputGroup size={'md'} bgColor={'white'}  >
-                        <InputRightElement fontSize={'2vmax'} bg={'#001d23'}  >
-                            <BiSearch color='white' cursor={'pointer'} />
-                        </InputRightElement>
-                        <Input type='search' placeholder='Find Cars, Mobile Phones and More ' display={['none', 'block']} />
-                    </InputGroup>
+                <Box border={'2px solid #001d23'} w={'40%'} borderRadius={'7px'} display={['none', 'flex']} flexShrink={'2'} >
+
+                    <Input variant={'unstyled'} padding={'8px'} bgColor={'white'} borderRadius={'5px 0 0 5px'} type='search' placeholder='Find Cars, Mobile Phones and More ' display={['none', 'block']} />
+                    <Box borderRadius={'0 5px 5px 0'} w={'50px'} border={'2px solid #001d23'} bgColor='#001d23' display={'flex'} alignItems={'center'} justifyContent={'center'} >
+                        <BiSearch fontSize={'2vmax'} color='white' cursor={'pointer'} />
+                    </Box>
                 </Box>
 
-                <Box mr={['25vmax', '5vmax']} display={['none', 'block']} boxSize={'3vmax'} >
+                <Box  display={['none', 'flex']}  >
                     <Menu >
                         {({ isOpen }) => (
                             <>
-                                <MenuButton fontSize={'1.3vmax'} color={'#001d23'} variant={'link'} isActive={isOpen} as={Button} leftIcon={'English'}>
-                                    {isOpen ? <ChevronUpIcon boxSize={'2vmax'} /> : <ChevronDownIcon boxSize={'2vmax'} />}
+                                <MenuButton fontSize={['1.3vmax','2.3vmax']} color={'#001d23'} variant={'link'} isActive={isOpen} as={Button} rightIcon={isOpen ? <ChevronUpIcon boxSize={['2vmax','2.5vmax']} /> : <ChevronDownIcon boxSize={['2vmax','2.5vmax']} />}>
+                                    English
                                 </MenuButton>
                                 <MenuList>
                                     <MenuItem>English</MenuItem>
@@ -123,14 +117,12 @@ const Nav = () => {
                     </Menu>
                 </Box>
 
-                <Box display={['none', 'block']} alignItems={'center'}>
-                    <Button variant={'link'} color={'#001d23'} fontSize={'1.5vmax'} >Login</Button>
+                <Box  display={['none', 'flex']} alignItems={'center'}>
+                    <Button variant={'link'} color={'#001d23'} fontSize={['1.5vmax','2.5vmax']} >Login</Button>
                 </Box>
 
-                <Box display={'flex'} justifyContent={'center'} alignContent={'center'} >
-                    <SellButton />
 
-                </Box>
+                <SellButton />
 
 
 

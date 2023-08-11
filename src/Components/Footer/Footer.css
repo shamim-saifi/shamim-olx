@@ -130,7 +130,7 @@
 }
 
 /* thirdFooter */
-.thirdFooter {
+/* .thirdFooter {
     width: 100%;
     background-color: #002f34;
     display: flex;
@@ -141,7 +141,7 @@
 .thirdFooter p {
     color: white;
     font: 1.5vmax;
-}
+} */
 
 @media screen and (max-width:550px) {
     .FirstFooter {

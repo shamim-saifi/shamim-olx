@@ -135,7 +135,7 @@ const Footer = () => {
       </div>
 
       {/* Third footer */}
-      <div className='thirdFooter'>
+      {/* <div className='thirdFooter'>
         <div>
           <p>Other countries</p>
           <p>Indonesia - Pakistan - South Africa</p>
@@ -143,7 +143,7 @@ const Footer = () => {
         <div>
           <p>All rights reserved © 2006-2023 OLX</p>
         </div>
-      </div>
+      </div> */}
     </>
   )
 }

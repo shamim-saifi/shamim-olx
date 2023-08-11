@@ -2,7 +2,7 @@ import React from 'react'
 import './HomeCard.css'
 import {AiOutlineHeart} from 'react-icons/ai'
 
-const HomeCard = ({ img, price, name, location, km, day }) => {
+const HomeCard = ({ img, price, name, location, day }) => { 
     return (
 
         <div className='Homecard'>
@@ -11,7 +11,6 @@ const HomeCard = ({ img, price, name, location, km, day }) => {
                 
                 <img src={img} alt="pro" />
                 <p id='price'>{price}</p>
-                <p id='km'>{km}</p>
                 <p id='name'>{name}</p>
 
                 <div className='cardBottom'>

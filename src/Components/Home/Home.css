@@ -101,7 +101,7 @@
 .secondWrapper {
     width: 95%;
     margin: auto;
-    margin-top: 2vmax;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -115,6 +115,7 @@
 }
 
 .secondCardContainer {
+    /* width: 100%; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
