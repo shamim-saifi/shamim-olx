@@ -47,7 +47,7 @@ const Nav = () => {
                     <Img src={logo} />
                     <Box display={['block', 'none']} ml={'1vmax'}>
                         <Button as={IconButton} icon={<HamburgerIcon />} onClick={onOpen} />
-                        <Drawer placement='top' onClose={onClose} isOpen={isOpen} size={'full'}>
+                        <Drawer placement='left' onClose={onClose} isOpen={isOpen} size={'full'}>
                             <DrawerOverlay />
                             <DrawerContent>
                                 <DrawerCloseButton />
@@ -105,7 +105,7 @@ const Nav = () => {
                     <Menu >
                         {({ isOpen }) => (
                             <>
-                                <MenuButton fontSize={['1.3vmax','2.3vmax']} color={'#001d23'} variant={'link'} isActive={isOpen} as={Button} rightIcon={isOpen ? <ChevronUpIcon boxSize={['2vmax','2.5vmax']} /> : <ChevronDownIcon boxSize={['2vmax','2.5vmax']} />}>
+                                <MenuButton  fontSize={['sm','md','lg','xl']} color={'#001d23'} variant={'link'} isActive={isOpen} as={Button} rightIcon={isOpen ? <ChevronUpIcon boxSize={['2vmax','2.5vmax']} /> : <ChevronDownIcon boxSize={['2vmax','2.5vmax']} />}>
                                     English
                                 </MenuButton>
                                 <MenuList>
@@ -118,7 +118,7 @@ const Nav = () => {
                 </Box>
 
                 <Box  display={['none', 'flex']} alignItems={'center'}>
-                    <Button variant={'link'} color={'#001d23'} fontSize={['1.5vmax','2.5vmax']} >Login</Button>
+                    <Button  variant={'link'} color={'#001d23'} fontSize={['sm','md','lg','xl']} >Login</Button>
                 </Box>
 
 
